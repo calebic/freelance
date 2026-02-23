@@ -16,7 +16,7 @@
   <header class="hero section" id="top">
     <nav class="nav">
       <a class="brand" href="#top">Your Name<span>Digital</span></a>
-      <a class="nav-cta" href="#about">About</a>
+      <a class="nav-cta" href="#contact">Get a Quote</a>
     </nav>
 
     <div class="hero-copy reveal">
@@ -119,6 +119,34 @@
           <li>Include an FAQ for objections (timeline, revisions, and guarantees).</li>
         </ul>
       </div>
+    </section>
+
+    <section class="contact section reveal" id="contact" aria-labelledby="contact-title">
+      <div class="contact-copy">
+        <h2 id="contact-title">Get a Quote or Free Audit</h2>
+        <p>Tell me a little about your business and goals. I’ll send a tailored recommendation with next steps.</p>
+        <ul class="contact-points">
+          <li>Fast response within 1 business day</li>
+          <li>No-pressure quote + strategy direction</li>
+          <li>Clear timeline and deliverables</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" action="mailto:youremail@example.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Your name" />
+
+        <label for="business">Business</label>
+        <input id="business" name="business" type="text" placeholder="Business name" />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@company.com" />
+
+        <label for="help">What do you need help with?</label>
+        <textarea id="help" name="project" rows="5" required placeholder="Website build, SEO growth, or audit request..."></textarea>
+
+        <button type="submit" class="submit-btn">Request Quote / Audit</button>
+      </form>
     </section>
   </main>
 

@@ -109,7 +109,8 @@ h1 {
 }
 
 .pricing h2,
-.about h2 {
+.about h2,
+.contact h2 {
   font-size: clamp(1.65rem, 3vw, 2.2rem);
   margin-bottom: 0.85rem;
 }
@@ -179,7 +180,8 @@ h3 {
 .plan-intro,
 .bottom-line,
 .roi,
-.about p {
+.about p,
+.contact p {
   color: var(--muted);
   line-height: 1.72;
 }
@@ -228,7 +230,8 @@ ul {
   line-height: 1.7;
 }
 
-.about {
+.about,
+.contact {
   margin-top: 4.2rem;
   padding: 1.2rem;
   border: 1px solid var(--border);
@@ -240,6 +243,62 @@ ul {
   margin-top: 1.4rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1rem;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.contact-points {
+  margin-top: 0.5rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(11, 16, 33, 0.7);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 0.7rem 0.8rem;
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: rgba(112, 240, 202, 0.8);
+  box-shadow: 0 0 0 3px rgba(112, 240, 202, 0.14);
+}
+
+.submit-btn {
+  margin-top: 0.2rem;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 0.95rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  color: #06130f;
+  background: linear-gradient(135deg, var(--accent), #9ffde3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(112, 240, 202, 0.35);
 }
 
 .footer {
@@ -259,8 +318,15 @@ ul {
   transform: translateY(0);
 }
 
+@media (max-width: 900px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 640px) {
   .hero-copy { padding-top: 3.2rem; }
   .feature-block p { font-size: 0.92rem; }
-  .about { margin-top: 2.8rem; }
+  .about,
+  .contact { margin-top: 2.8rem; }
 }
