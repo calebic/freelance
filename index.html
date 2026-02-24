@@ -3,27 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | SEO-Focused Web Developer</title>
-  <meta name="description" content="SEO-structured, conversion-focused websites for local businesses that want to rank, get leads, and grow." />
+  <title>calebs.design | SEO Web Design & Local Growth for Service Businesses</title>
+  <meta name="description" content="calebs.design builds SEO-focused, conversion-driven websites for service businesses that want more qualified leads across local and regional markets." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="author" content="calebs.design" />
+  <link rel="canonical" href="https://calebs.design/" />
+  <meta property="og:title" content="calebs.design | SEO Web Design & Local Growth" />
+  <meta property="og:description" content="Conversion-focused web design and local SEO systems for businesses ready to grow in their local and surrounding markets." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://calebs.design/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="calebs.design | SEO Web Design & Local Growth" />
+  <meta name="twitter:description" content="SEO-first websites that rank, convert, and scale for service businesses." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "calebs.design",
+      "url": "https://calebs.design/",
+      "description": "SEO-focused website design and local growth strategy for service businesses in local and regional markets.",
+      "serviceType": ["Web Design", "Technical SEO", "Local SEO", "Conversion Optimization"],
+      "areaServed": [
+        "United States",
+        "Greater St. Louis region",
+        "Central Valley region"
+      ]
+    }
+  </script>
 </head>
 <body>
   <div class="background-glow" aria-hidden="true"></div>
 
   <header class="hero section" id="top">
     <nav class="nav">
-      <a class="brand" href="#top">Your Name<span>Digital</span></a>
-      <a class="nav-cta" href="#about">About</a>
+      <a class="brand" href="#top">calebs<span>.design</span></a>
+      <a class="nav-cta" href="#quote">Get a quote</a>
     </nav>
 
     <div class="hero-copy reveal">
-      <p class="eyebrow">Freelance Web + Local SEO</p>
-      <h1>A website that ranks, converts, and actually grows your business.</h1>
+      <p class="eyebrow">SEO Web Design + Local Growth Strategy</p>
+      <h1>Professional websites engineered to rank, convert, and scale your business.</h1>
       <p class="subhead">
-        You are not paying for a brochure site. You are investing in a search-structured, conversion-focused growth asset designed to pull in better local leads.
+        calebs.design builds search-structured, conversion-focused websites for service businesses that want stronger local visibility and measurable lead growth.
       </p>
     </div>
 
@@ -100,13 +125,38 @@
   </header>
 
   <main>
+    <section class="quote section reveal" id="quote" aria-labelledby="quote-title">
+      <h2 id="quote-title">Get a quote</h2>
+      <p>Tell us about your business, goals, and timeline. We’ll follow up with a clear scope, timeline, and pricing recommendation.</p>
+      <form class="quote-form" action="#" method="post">
+        <label>
+          Name
+          <input type="text" name="name" autocomplete="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" autocomplete="email" placeholder="you@company.com" required>
+        </label>
+        <label>
+          Business / Website
+          <input type="text" name="business" placeholder="Business name or current website">
+        </label>
+        <label>
+          Project details
+          <textarea name="message" rows="4" placeholder="What do you need help with?" required></textarea>
+        </label>
+        <button type="submit">Request quote</button>
+      </form>
+    </section>
+
+
     <section class="about section reveal" id="about" aria-labelledby="about-title">
       <h2 id="about-title">About</h2>
       <p>
-        I'm <strong>[Your Name]</strong>, a freelance web developer focused on local business growth. I blend technical SEO, conversion strategy, and custom design to build websites that do one thing well: create consistent opportunities for your business.
+        I'm <strong>Caleb</strong>, founder of <strong>calebs.design</strong>. I deliver business-focused web design backed by technical SEO, conversion strategy, and clear messaging that helps service companies generate qualified leads.
       </p>
       <p>
-        My approach is straightforward: build the right foundation first, then scale with data. That means your site launches with structure and clarity — then improves over time based on performance, not guesswork.
+        My approach is straightforward: launch with a high-performing SEO foundation, then improve with data-driven optimization. We support clients nationally while maintaining hands-on regional support in the Greater St. Louis area and nearby Central Valley communities.
       </p>
 
       <div class="suggestions">
@@ -122,8 +172,11 @@
   </main>
 
   <footer class="footer section reveal">
-    <p>© <span id="year"></span> Your Name Digital. Built for rankings, leads, and growth.</p>
+    <p>© <span id="year"></span> calebs.design (calebs.design). Built for rankings, leads, and long-term growth.</p>
+    <p class="footer-local">Locally connected in the Greater St. Louis area and surrounding Central Valley communities — serving clients across the U.S.</p>
   </footer>
+
+  <a class="mobile-quote" href="#quote" aria-label="Get a quote">Get a quote</a>
 
   <script src="script.js"></script>
 </body>
