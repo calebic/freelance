@@ -108,23 +108,6 @@ h1 {
   line-height: 1.75;
 }
 
-.primary-cta {
-  display: inline-block;
-  margin-top: 1.2rem;
-  text-decoration: none;
-  color: #05120e;
-  background: var(--accent);
-  padding: 0.7rem 1.1rem;
-  border-radius: 999px;
-  font-weight: 700;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.primary-cta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(112, 240, 202, 0.35);
-}
-
 .pricing h2,
 .about h2 {
   font-size: clamp(1.65rem, 3vw, 2.2rem);
@@ -246,6 +229,49 @@ ul {
   margin-top: 1.4rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1rem;
+}
+
+.quote {
+  margin-top: 2.2rem;
+  padding: 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: rgba(6, 10, 23, 0.56);
+}
+
+.quote-form {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.quote-form label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.quote-form input,
+.quote-form textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  font: inherit;
+  color: var(--text);
+  background: rgba(5, 10, 25, 0.6);
+}
+
+.quote-form button {
+  justify-self: start;
+  border: 0;
+  background: var(--accent);
+  color: #06130f;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
 }
 
 .footer {
