@@ -325,6 +325,21 @@ ul {
   color: var(--muted);
 }
 
+.footer-meta,
+.footer-domain {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.footer-domain a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-domain a:hover {
+  text-decoration: underline;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(22px);
