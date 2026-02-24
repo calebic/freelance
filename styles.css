@@ -82,6 +82,24 @@ body {
   transform: translateY(-2px);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nav-cta-solid {
+  background: linear-gradient(135deg, var(--accent), #9ffde3);
+  color: #06130f;
+  border-color: transparent;
+  font-weight: 700;
+}
+
+.nav-cta-solid:hover {
+  border-color: transparent;
+  box-shadow: 0 10px 24px rgba(112, 240, 202, 0.3);
+}
+
 .hero-copy {
   padding: 4.8rem 0 2rem;
   max-width: 860px;
@@ -329,4 +347,6 @@ ul {
   .feature-block p { font-size: 0.92rem; }
   .about,
   .contact { margin-top: 2.8rem; }
+  .nav-actions { gap: 0.45rem; }
+  .nav-cta { padding: 0.45rem 0.75rem; font-size: 0.88rem; }
 }
